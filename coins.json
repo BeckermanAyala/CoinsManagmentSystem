@@ -1,0 +1,38 @@
+[
+    {
+      "name": "Bitcoin",
+      "price": "30000",
+      "marketCap": "600B",
+      "link": "https://coinmarketcap.com/currencies/bitcoin/"
+    },
+    {
+      "name": "Ethereum",
+      "price": "2000",
+      "marketCap": "250B",
+      "link": "https://coinmarketcap.com/currencies/ethereum/"
+    },
+    {
+        "name": "BNB",
+        "price": "500",
+        "marketCap": "76B",
+        "link": "https://coinmarketcap.com/currencies/bnb/"
+      },
+      {
+        "name": "Tether",
+        "price": "1",
+        "marketCap": "118B",
+        "link": "https://coinmarketcap.com/currencies/tether/"
+      },
+      {
+        "name": "Solana",
+        "price": "130",
+        "marketCap": "60B",
+        "link": "https://coinmarketcap.com/currencies/solana/"
+      },
+      {
+        "name": "USDC",
+        "price": "1",
+        "marketCap": "35B",
+        "link": "https://coinmarketcap.com/currencies/usd-coin/"
+      }
+  ]
