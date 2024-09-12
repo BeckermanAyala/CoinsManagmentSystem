@@ -1,8 +1,19 @@
-'use client';  // רכיב צד לקוח
+'use client';
 
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/components/ui/table';
 
-function CoinTable({ coins = [] }) {
+interface Coin {
+    name: string;
+    price: string;
+    marketCap: string;
+    link: string;
+}
+
+interface CoinTableProps {
+    coins: Coin[];
+}
+
+function CoinTable({ coins = [] }: CoinTableProps) {
     return (
         <Table>
             <TableHeader>
@@ -16,7 +27,7 @@ function CoinTable({ coins = [] }) {
             <TableBody>
                 {coins.length === 0 ? (
                     <TableRow>
-                        <TableCell colSpan="4">No data available</TableCell>
+                        <TableCell colSpan={4}>No data available</TableCell>
                     </TableRow>
                 ) : (
                     coins.map((coin) => (

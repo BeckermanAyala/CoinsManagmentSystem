@@ -1,12 +1,23 @@
-'use client';  // רכיב צד לקוח
+'use client';
 
 import { useState } from 'react';
 import CoinTable from './coinTable';
 
-function HomePage({ coins  }) {
-    const [search, setSearch] = useState('');
+interface Coin {
+    name: string;
+    price: string;
+    marketCap: string;
+    link: string;
+}
 
-    const filterCoin = coins.filter(coin =>
+interface HomePageProps {
+    coins: Coin[];
+}
+
+function HomePage({ coins }: HomePageProps) {
+    const [search, setSearch] = useState<string>('');
+
+    const filteredCoins = coins.filter((coin) =>
         coin.name.toLowerCase().includes(search.toLowerCase())
     );
 
@@ -19,7 +30,7 @@ function HomePage({ coins  }) {
                 onChange={(e) => setSearch(e.target.value)}
                 style={{ marginBottom: '10px' }}
             />
-            <CoinTable coins={filterCoin} />
+            <CoinTable coins={filteredCoins} />
         </div>
     );
 }
