@@ -1,7 +1,7 @@
 'use client';  // רכיב צד לקוח
 
 import { useState } from 'react';
-import CoinTable from './CoinTable';
+import CoinTable from './coinTable';
 
 function HomePage({ coins  }) {
     const [search, setSearch] = useState('');
