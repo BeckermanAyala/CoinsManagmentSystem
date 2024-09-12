@@ -1,12 +1,10 @@
-// src/app/terms/page.tsx
 
-'use client'; // Add this at the top to make it a Client Component
+'use client'; 
 
 import { useEffect } from 'react';
 
 export default function TermsPage() {
     useEffect(() => {
-        // Inject the raw HTML code provided by Termly into the DOM
         document.getElementById('policy-container')!.innerHTML = `
            <style>
   [data-custom-class='body'], [data-custom-class='body'] * {

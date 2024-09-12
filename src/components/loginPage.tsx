@@ -13,7 +13,7 @@ function LogIn() {
                     <LoginLink postLoginRedirectURL="/dashboard" style={styles.button}>
                         Sign in
                     </LoginLink>
-                    <RegisterLink postSignupRedirectURL="/dashboard" style={styles.button}>
+                    <RegisterLink postLoginRedirectURL="/dashboard" style={styles.button}>
                         Sign up
                     </RegisterLink>
                 </div>
@@ -22,8 +22,7 @@ function LogIn() {
     );
 }
 
-// Inline styles for simplicity; you can also use CSS/SCSS if preferred
-const styles = {
+const styles: { [key: string]: React.CSSProperties } = {
     container: {
         display: 'flex',
         justifyContent: 'center',
