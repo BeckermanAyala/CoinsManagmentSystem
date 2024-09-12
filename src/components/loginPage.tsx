@@ -1,5 +1,5 @@
 'use client';
-
+// 
 import { LoginLink, RegisterLink } from '@kinde-oss/kinde-auth-nextjs/components';
 
 function LogIn() {
